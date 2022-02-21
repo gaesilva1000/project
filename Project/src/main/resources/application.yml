@@ -1,0 +1,17 @@
+spirng:
+  datasource:
+   driverClassName: org.h2.Driver
+   url: ${$DB_URL:jdbc:h2:mem:project}
+   username: sa
+   password:
+
+jpa:
+  defer-datasouce-initialization: 'true'
+  database-platform: org.hibernate.dialect.H2Dialect
+  hibernate:
+   ddl-auto: update
+
+  h2: 
+   console:
+   enabled: true
+   path: /h2-console
